@@ -1,0 +1,158 @@
+  public static void main(String[] args) throws Exception {
+	
+	  /* UIServer uiServer = UIServer.getInstance();
+
+  	    StatsStorage statsStorage = new InMemoryStatsStorage();         //Alternative: new FileStatsStorage(File), for saving and loading later
+  	   
+  	    uiServer.attach(statsStorage);
+
+  	    */
+  	   	
+  	   	
+	   int height = 32;
+	    int width = 32;
+	     int channels = 3;
+       int outputNum = 10; // The number of possible outcomes
+       int batchSize = 40; // Test batch size
+      
+       int iterations = 1; // Number of training iterations
+       int seed = 123; //
+       int numExamples = 2000; 
+        double splitTrainTest = 0.8;
+        int epochs = 1;
+        int nCores = 2;
+        Random rng = new Random(seed);
+       log.info("Load data....");
+       /**cd
+        * Data Setup -> organize and limit data file paths:
+        *  - mainPath = path to image files
+        *  - fileSplit = define basic dataset split with limits on format
+        *  - pathFilter = define additional file load filter to limit size and balance batch content
+        **/
+       ParentPathLabelGenerator labelMaker = new ParentPathLabelGenerator();
+       File mainPath = new File("C:/Users/youssef/Downloads/trainsmall");
+       FileSplit fileSplit = new FileSplit(mainPath, NativeImageLoader.ALLOWED_FORMATS,rng);
+       BalancedPathFilter pathFilter = new BalancedPathFilter(rng, labelMaker,0,0,0);
+
+       /**
+        * Data Setup -> train test split
+        *  - inputSplit = define train and test split
+        **/
+       InputSplit[] inputSplit = fileSplit.sample(pathFilter,0.1,0.1);
+       InputSplit trainData = inputSplit[0];
+       InputSplit testData = inputSplit[1];
+      System.out.println("  hir "+Arrays.toString(testData.locations()));
+       /**
+        * Data Setup -> transformation
+        *  - Transform = how to tranform images and generate large dataset to train on
+        **/
+       //  ImageTransform flipTransform1 = new FlipImageTransform(rng);
+       // ImageTransform flipTransform2 = new FlipImageTransform(new Random(123));
+       // ImageTransform warpTransform = new WarpImageTransform(rng, 42);
+//       ImageTransform colorTransform = new ColorConversionTransform(new Random(seed), COLOR_BGR2YCrCb);
+       //  List<ImageTransform> transforms = Arrays.asList(new ImageTransform[]{flipTransform1, warpTransform, flipTransform2});
+       ImageRecordReader recordReader = new ImageRecordReader(height, width, channels, labelMaker);
+       DataSetIterator dataIter;
+       MultipleEpochsIterator trainIter;
+
+       /**
+        * Data Setup -> normalization
+        *  - how to normalize images and generate large dataset to train on
+        **/
+       DataNormalization scaler = new ImagePreProcessingScaler(0, 1);
+
+       log.info("Build model....");
+
+
+        MultiLayerConfiguration.Builder builder = new NeuralNetConfiguration.Builder()
+                .seed(seed)
+                .iterations(iterations).regularization(true)
+                 .l2(2e-4)
+                 .learningRate(0.1)
+                 .momentum(0.99).updater(Updater.NESTEROVS)
+               // TODO confirm this is required
+                .miniBatch(true)
+                .optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT)
+                .list()
+                .layer(0, new ConvolutionLayer.Builder(3, 3)
+                        .nOut(64)
+                        .stride(1, 1)
+                        .padding(2,2)
+                        .weightInit(WeightInit.XAVIER)
+                        .activation(Activation.RELU)
+                        .build())
+                .layer(1, new ConvolutionLayer.Builder(3, 3)
+                        .nOut(64)
+                        .stride(1, 1)
+                        .padding(2,2)
+                        .weightInit(WeightInit.XAVIER)
+                        .activation(Activation.RELU)
+                        .build())
+                .layer(2, new SubsamplingLayer
+                        .Builder(SubsamplingLayer.PoolingType.MAX, new int[]{2, 2})
+                        .build())
+                .layer(3, new ConvolutionLayer.Builder(3, 3)
+                        .nOut(128)
+                        .stride(1, 1)
+                        .weightInit(WeightInit.XAVIER)
+                        .activation(Activation.RELU)
+                        .build())
+                .layer(4, new ConvolutionLayer.Builder(3, 3)
+                        .nOut(128)
+                        .stride(1, 1)
+                        .weightInit(WeightInit.XAVIER)
+                        .activation(Activation.RELU)
+                        .build())
+                .layer(5, new SubsamplingLayer
+                        .Builder(SubsamplingLayer.PoolingType.MAX, new int[]{2, 2})
+                        .build())
+                .layer(6, new DenseLayer.Builder().nOut(100).activation(Activation.RELU)
+                        .build())
+                .layer(7, new OutputLayer.Builder(LossFunctions.LossFunction.NEGATIVELOGLIKELIHOOD)
+                        .nOut(outputNum)
+                        .weightInit(WeightInit.XAVIER)
+                        .activation(Activation.SOFTMAX)
+                        .build())
+                .setInputType(InputType.convolutionalFlat(32,32,3))
+                .backprop(true).pretrain(false);
+
+        MultiLayerConfiguration conf = builder.build();
+        MultiLayerNetwork model = new MultiLayerNetwork(conf);
+        model.init();
+        model.setListeners(new ScoreIterationListener(100));
+        //  for (ImageTransform transform : transforms) {
+        	// System.out.print("\nTraining on transformation: " + transform.getClass().toString() + "\n\n");
+            recordReader.initialize(trainData);
+            dataIter = new RecordReaderDataSetIterator(recordReader, batchSize, 1,10);
+            scaler.fit(dataIter);
+            dataIter.setPreProcessor(scaler);
+            trainIter = new MultipleEpochsIterator(epochs, dataIter, nCores);
+            model.fit(trainIter);
+            // }
+	        
+
+        recordReader.initialize(testData);
+     //   model.setListeners(new StatsListener(statsStorage));
+        dataIter = new RecordReaderDataSetIterator(recordReader, batchSize, 1, 10);
+        scaler.fit(dataIter);
+        dataIter.setPreProcessor(scaler);
+        Evaluation eval = model.evaluate(dataIter);
+        log.info(eval.stats(true));
+
+     
+        log.info("****************Example finished********************");
+	
+        //Save the model
+        File locationToSave = new File("C:/Users/youssef/Downloads/trainsmallMyMultiLayerNetwork.zip");      //Where to save the network. Note: the file is in .zip format - can be opened externally
+        boolean saveUpdater = true;                                             //Updater: i.e., the state for Momentum, RMSProp, Adagrad etc. Save this if you want to train your network more in the future
+        ModelSerializer.writeModel(model, locationToSave, saveUpdater);
+
+        //Load the model
+        MultiLayerNetwork restored = ModelSerializer.restoreMultiLayerNetwork(locationToSave);
+
+
+        System.out.println("Saved and loaded parameters are equal:      " + model.params().equals(restored.params()));
+        System.out.println("Saved and loaded configurations are equal:  " + model.getLayerWiseConfigurations().equals(restored.getLayerWiseConfigurations()));
+        Evaluation eval1 = restored.evaluate(dataIter);
+        log.info(eval1.stats(true));
+   }
