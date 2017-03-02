@@ -1,0 +1,240 @@
+12:00:07.999 [main] INFO  org.nd4j.linalg.factory.Nd4jBackend - Loaded [CpuBackend] backend
+12:00:08.608 [main] INFO  org.nd4j.nativeblas.NativeOpsHolder - Number of threads used for NativeOps: 4
+12:00:08.987 [main] DEBUG org.reflections.Reflections - going to scan these urls:
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-buffer/0.7.2/nd4j-buffer-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-windows-x86_64.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native-api/0.7.2/nd4j-native-api-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-linux-x86_64.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/jackson/0.7.2/jackson-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-jackson/0.7.2/nd4j-jackson-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-common/0.7.2/nd4j-common-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-api/0.7.2/nd4j-api-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-linux-ppc64le.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-macosx-x86_64.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-context/0.7.2/nd4j-context-0.7.2.jar!/
+12:00:09.654 [main] INFO  org.reflections.Reflections - Reflections took 667 ms to scan 12 urls, producing 29 keys and 176 values 
+12:00:10.685 [main] DEBUG org.reflections.Reflections - going to scan these urls:
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/com/twelvemonkeys/imageio/imageio-tiff/3.1.1/imageio-tiff-3.1.1.jar
+file:/C:/Users/youssef/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar
+file:/C:/Users/youssef/.m2/repository/com/github/jai-imageio/jai-imageio-core/1.3.0/jai-imageio-core-1.3.0.jar
+file:/C:/Users/youssef/.m2/repository/org/eclipse/collections/eclipse-collections/7.1.0/eclipse-collections-7.1.0.jar
+file:/C:/Users/youssef/.m2/repository/org/mapdb/elsa/3.0.0-M5/elsa-3.0.0-M5.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/play-netty-server_2.10/2.4.6/play-netty-server_2.10-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/opencv/3.1.0-1.3/opencv-3.1.0-1.3.jar
+file:/C:/Users/youssef/.m2/repository/com/twelvemonkeys/common/common-image/3.1.1/common-image-3.1.1.jar
+file:/C:/jre1.8.0_111/lib/ext/sunjce_provider.jar
+file:/C:/Users/youssef/.m2/repository/org/jfree/jcommon/1.0.23/jcommon-1.0.23.jar
+file:/C:/Users/youssef/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.4/jackson-core-2.4.4.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/leptonica/1.73-1.3/leptonica-1.73-1.3-android-arm.jar
+file:/C:/Users/youssef/.m2/repository/com/twelvemonkeys/imageio/imageio-core/3.1.1/imageio-core-3.1.1.jar
+file:/C:/Users/youssef/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-context/0.7.2/nd4j-context-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-common/0.7.2/nd4j-common-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/flycapture/2.9.3.43-1.3/flycapture-2.9.3.43-1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/openblas/0.2.19-1.3/openblas-0.2.19-1.3-linux-x86_64.jar
+file:/C:/Users/youssef/.m2/repository/com/twelvemonkeys/imageio/imageio-metadata/3.1.1/imageio-metadata-3.1.1.jar
+file:/C:/Users/youssef/.m2/repository/joda-time/joda-time/2.2/joda-time-2.2.jar
+file:/C:/Users/youssef/.m2/repository/org/springframework/spring-context/4.1.6.RELEASE/spring-context-4.1.6.RELEASE.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/leptonica/1.73-1.3/leptonica-1.73-1.3-linux-x86_64.jar
+file:/C:/jre1.8.0_111/lib/ext/jaccess.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/openblas/0.2.19-1.3/openblas-0.2.19-1.3-android-arm.jar
+file:/C:/Users/youssef/.m2/repository/commons-codec/commons-codec/1.8/commons-codec-1.8.jar
+file:/C:/jre1.8.0_111/lib/ext/jfxrt.jar
+file:/C:/Users/youssef/.m2/repository/org/agrona/Agrona/0.5.4/Agrona-0.5.4.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/config/1.3.0/config-1.3.0.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/play-datacommons_2.10/2.4.6/play-datacommons_2.10-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/com/twelvemonkeys/common/common-io/3.1.1/common-io-3.1.1.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/opencv/3.1.0-1.3/opencv-3.1.0-1.3-macosx-x86_64.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/build-link/2.4.6/build-link-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/com/twelvemonkeys/imageio/imageio-psd/3.1.1/imageio-psd-3.1.1.jar
+file:/C:/Users/youssef/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/akka/akka-slf4j_2.10/2.3.13/akka-slf4j_2.10-2.3.13.jar
+file:/C:/Users/youssef/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar
+file:/C:/Users/youssef/.m2/repository/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar
+file:/C:/Users/youssef/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.4.4/jackson-datatype-jsr310-2.4.4.jar
+file:/C:/Users/youssef/.m2/repository/org/reflections/reflections/0.9.10/reflections-0.9.10.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/opencv/3.1.0-1.3/opencv-3.1.0-1.3-linux-ppc64le.jar
+file:/C:/Users/youssef/.m2/repository/org/deeplearning4j/deeplearning4j-play_2.10/0.7.2/deeplearning4j-play_2.10-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/akka/akka-remote_2.10/2.3.13/akka-remote_2.10-2.3.13.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-android-x86.jar
+file:/C:/Users/youssef/.m2/repository/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/play-exceptions/2.4.6/play-exceptions-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/org/apache/commons/commons-lang3/3.3.1/commons-lang3-3.3.1.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/play-java_2.10/2.4.6/play-java_2.10-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/play-netty-utils/2.4.6/play-netty-utils-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/org/json/json/20131018/json-20131018.jar
+file:/C:/Users/youssef/.m2/repository/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-macosx-x86_64.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/play-iteratees_2.10/2.4.6/play-iteratees_2.10-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/opencv/3.1.0-1.3/opencv-3.1.0-1.3-linux-x86_64.jar
+file:/C:/Users/youssef/.m2/repository/com/google/inject/extensions/guice-assistedinject/4.0/guice-assistedinject-4.0.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/leptonica/1.73-1.3/leptonica-1.73-1.3-linux-ppc64le.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/flandmark/1.07-1.3/flandmark-1.07-1.3.jar
+file:/C:/jre1.8.0_111/lib/ext/cldrdata.jar
+file:/C:/Users/youssef/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar
+file:/C:/Users/youssef/.m2/repository/org/hibernate/hibernate-validator/5.0.3.Final/hibernate-validator-5.0.3.Final.jar
+file:/C:/Users/youssef/.m2/repository/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a.jar
+file:/C:/jre1.8.0_111/lib/ext/localedata.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/jackson/0.7.2/jackson-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/leptonica/1.73-1.3/leptonica-1.73-1.3-android-x86.jar
+file:/C:/jre1.8.0_111/lib/ext/access-bridge-64.jar
+file:/C:/Users/youssef/.m2/repository/org/springframework/spring-beans/4.1.6.RELEASE/spring-beans-4.1.6.RELEASE.jar
+file:/C:/jre1.8.0_111/lib/ext/dnsns.jar
+file:/C:/Users/youssef/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar
+file:/C:/Users/youssef/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0/javax.ws.rs-api-2.0.jar
+file:/C:/Users/youssef/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/leptonica/1.73-1.3/leptonica-1.73-1.3-windows-x86_64.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/librealsense/1.9.6-1.3/librealsense-1.9.6-1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar
+file:/C:/Users/youssef/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar
+file:/C:/Users/youssef/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.4.4/jackson-datatype-jdk8-2.4.4.jar
+file:/C:/Users/youssef/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/twirl-api_2.10/1.1.1/twirl-api_2.10-1.1.1.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/libfreenect/0.5.3-1.3/libfreenect-0.5.3-1.3.jar
+file:/C:/Users/youssef/.m2/repository/io/netty/netty/3.10.4.Final/netty-3.10.4.Final.jar
+file:/C:/Users/youssef/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.10/2.4.4/jackson-module-scala_2.10-2.4.4.jar
+file:/C:/Users/youssef/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-buffer/0.7.2/nd4j-buffer-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar
+file:/C:/Users/youssef/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.4/jackson-databind-2.4.4.jar
+file:/C:/Users/youssef/.m2/repository/com/google/code/findbugs/jsr305/2.0.3/jsr305-2.0.3.jar
+file:/C:/Users/youssef/.m2/repository/org/datavec/datavec-nd4j-common/0.7.2/datavec-nd4j-common-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/play-server_2.10/2.4.6/play-server_2.10-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native-api/0.7.2/nd4j-native-api-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.0.2/kotlin-stdlib-1.0.2.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/openblas/0.2.19-1.3/openblas-0.2.19-1.3-windows-x86_64.jar
+file:/C:/Users/youssef/.m2/repository/org/deeplearning4j/deeplearning4j-ui_2.10/0.7.2/deeplearning4j-ui_2.10-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native-platform/0.7.2/nd4j-native-platform-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar
+file:/C:/Users/youssef/.m2/repository/org/javassist/javassist/3.19.0-GA/javassist-3.19.0-GA.jar
+file:/C:/Users/youssef/.m2/repository/org/mapdb/mapdb/3.0.2/mapdb-3.0.2.jar
+file:/C:/Users/youssef/.m2/repository/net/jodah/typetools/0.4.3/typetools-0.4.3.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-windows-x86_64.jar
+file:/C:/Users/youssef/.m2/repository/org/jetbrains/kotlin/kotlin-runtime/1.0.2/kotlin-runtime-1.0.2.jar
+file:/C:/Users/youssef/.m2/repository/org/springframework/spring-core/4.1.6.RELEASE/spring-core-4.1.6.RELEASE.jar
+file:/C:/jre1.8.0_111/lib/ext/sunec.jar
+file:/C:/Users/youssef/.m2/repository/org/deeplearning4j/deeplearning4j-core/0.7.2/deeplearning4j-core-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/libdc1394/2.2.4-1.3/libdc1394-2.2.4-1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/openblas/0.2.19-1.3/openblas-0.2.19-1.3-linux-ppc64le.jar
+file:/C:/jre1.8.0_111/lib/ext/zipfs.jar
+file:/C:/Users/youssef/.m2/repository/org/datavec/datavec-data-image/0.7.2/datavec-data-image-0.7.2.jar
+file:/C:/jre1.8.0_111/lib/ext/sunpkcs11.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp/1.3.1/javacpp-1.3.1.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-linux-x86_64.jar
+file:/C:/jre1.8.0_111/lib/ext/nashorn.jar
+file:/C:/Users/youssef/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar
+file:/C:/Users/youssef/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-android-arm.jar
+file:/C:/Users/youssef/.m2/repository/org/deeplearning4j/deeplearning4j-ui-resources/0.7.2/deeplearning4j-ui-resources-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/akka/akka-actor_2.10/2.3.13/akka-actor_2.10-2.3.13.jar
+file:/C:/Users/youssef/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/leptonica/1.73-1.3/leptonica-1.73-1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/openblas/0.2.19-1.3/openblas-0.2.19-1.3-macosx-x86_64.jar
+file:/C:/Users/youssef/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacv/1.3/javacv-1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/videoinput/0.200-1.3/videoinput-0.200-1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-linux-ppc64le.jar
+file:/C:/Users/youssef/.m2/repository/org/apache/directory/studio/org.apache.commons.codec/1.8/org.apache.commons.codec-1.8.jar
+file:/C:/Users/youssef/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar
+file:/C:/Users/youssef/.m2/repository/org/deeplearning4j/deeplearning4j-ui-model/0.7.2/deeplearning4j-ui-model-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/com/twelvemonkeys/imageio/imageio-bmp/3.1.1/imageio-bmp-3.1.1.jar
+file:/C:/Users/youssef/.m2/repository/org/projectlombok/lombok/1.16.10/lombok-1.16.10.jar
+file:/C:/Users/youssef/.m2/repository/org/scala-stm/scala-stm_2.10/0.7/scala-stm_2.10-0.7.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-api/0.7.2/nd4j-api-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar
+file:/C:/Users/youssef/.m2/repository/org/apache/commons/commons-compress/1.8/commons-compress-1.8.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/openblas/0.2.19-1.3/openblas-0.2.19-1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/openblas/0.2.19-1.3/openblas-0.2.19-1.3-android-x86.jar
+file:/C:/Users/youssef/.m2/repository/org/tukaani/xz/1.5/xz-1.5.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/play-json_2.10/2.4.6/play-json_2.10-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.jar
+file:/C:/Users/youssef/.m2/repository/org/eclipse/collections/eclipse-collections-api/7.1.0/eclipse-collections-api-7.1.0.jar
+file:/C:/Users/youssef/.m2/repository/org/xerial/sqlite-jdbc/3.15.1/sqlite-jdbc-3.15.1.jar
+file:/C:/Users/youssef/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.10/0.3.0/scala-java8-compat_2.10-0.3.0.jar
+file:/C:/Users/youssef/.m2/repository/com/twelvemonkeys/common/common-lang/3.1.1/common-lang-3.1.1.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/akka/akka-cluster_2.10/2.3.13/akka-cluster_2.10-2.3.13.jar
+file:/C:/Users/youssef/workspace/deeplearning4j-vgg-convnet-master/target/classes/
+file:/C:/Users/youssef/.m2/repository/jfree/jfreechart/1.0.13/jfreechart-1.0.13.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/opencv/3.1.0-1.3/opencv-3.1.0-1.3-android-x86.jar
+file:/C:/Users/youssef/.m2/repository/org/joda/joda-convert/1.7/joda-convert-1.7.jar
+file:/C:/Users/youssef/.m2/repository/org/eclipse/collections/eclipse-collections-forkjoin/7.1.0/eclipse-collections-forkjoin-7.1.0.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/netty/netty-http-pipelining/1.1.4/netty-http-pipelining-1.1.4.jar
+file:/C:/Users/youssef/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.4/jackson-annotations-2.4.4.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/ffmpeg/3.2.1-1.3/ffmpeg-3.2.1-1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-jackson/0.7.2/nd4j-jackson-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/artoolkitplus/2.3.1-1.3/artoolkitplus-2.3.1-1.3.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/leptonica/1.73-1.3/leptonica-1.73-1.3-macosx-x86_64.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/opencv/3.1.0-1.3/opencv-3.1.0-1.3-android-arm.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/play-functional_2.10/2.4.6/play-functional_2.10-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/jfree/jcommon/1.0.16/jcommon-1.0.16.jar
+file:/C:/jre1.8.0_111/lib/ext/sunmscapi.jar
+file:/C:/Users/youssef/.m2/repository/com/typesafe/play/play_2.10/2.4.6/play_2.10-2.4.6.jar
+file:/C:/Users/youssef/.m2/repository/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5.jar
+file:/C:/Users/youssef/.m2/repository/org/bytedeco/javacpp-presets/opencv/3.1.0-1.3/opencv-3.1.0-1.3-windows-x86_64.jar
+file:/C:/Users/youssef/.m2/repository/com/google/inject/guice/4.0/guice-4.0.jar
+file:/C:/Users/youssef/.m2/repository/org/deeplearning4j/deeplearning4j-nn/0.7.2/deeplearning4j-nn-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/net/jpountz/lz4/lz4/1.3.0/lz4-1.3.0.jar
+file:/C:/Users/youssef/.m2/repository/org/deeplearning4j/deeplearning4j-nlp/0.7.2/deeplearning4j-nlp-0.7.2.jar
+file:/C:/Users/youssef/.m2/repository/org/apache/tomcat/tomcat-servlet-api/8.0.21/tomcat-servlet-api-8.0.21.jar
+file:/C:/Users/youssef/.m2/repository/org/datavec/datavec-api/0.7.2/datavec-api-0.7.2.jar
+file:/C:/Users/youssef/Downloads/commons-lang3-3.4-bin/commons-lang3-3.4/commons-lang3-3.4.jar
+file:/C:/Users/youssef/.m2/repository/com/twelvemonkeys/imageio/imageio-jpeg/3.1.1/imageio-jpeg-3.1.1.jar
+12:00:16.919 [main] INFO  org.reflections.Reflections - Reflections took 6220 ms to scan 169 urls, producing 2835 keys and 19901 values 
+12:00:17.052 [main] DEBUG o.d.nn.conf.NeuralNetConfiguration - Registering class for JSON serialization: org.deeplearning4j.nn.conf.layers.DropoutLayer as subtype of org.deeplearning4j.nn.conf.layers.Layer
+12:00:17.068 [main] DEBUG o.d.nn.conf.NeuralNetConfiguration - Registering class for JSON serialization: org.deeplearning4j.nn.conf.layers.DropoutLayer as subtype of org.deeplearning4j.nn.conf.layers.Layer
+12:00:17.084 [main] WARN  o.d.nn.conf.MultiLayerConfiguration - Warning: new network default sets pretrain to false.
+12:00:17.084 [main] WARN  o.d.nn.conf.MultiLayerConfiguration - Warning: new network default sets backprop to true.
+12:00:17.224 [main] DEBUG org.reflections.Reflections - going to scan these urls:
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-buffer/0.7.2/nd4j-buffer-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-windows-x86_64.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native-api/0.7.2/nd4j-native-api-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-linux-x86_64.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/jackson/0.7.2/jackson-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-jackson/0.7.2/nd4j-jackson-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-common/0.7.2/nd4j-common-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-api/0.7.2/nd4j-api-0.7.2.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-linux-ppc64le.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-native/0.7.2/nd4j-native-0.7.2-macosx-x86_64.jar!/
+jar:file:/C:/Users/youssef/.m2/repository/org/nd4j/nd4j-context/0.7.2/nd4j-context-0.7.2.jar!/
+12:00:17.646 [main] INFO  org.reflections.Reflections - Reflections took 422 ms to scan 12 urls, producing 368 keys and 1424 values 
+12:00:22.642 [main] INFO  org.nd4j.nativeblas.Nd4jBlas - Number of threads used for BLAS: 4
+12:00:25.222 [main] INFO  o.d.o.l.ScoreIterationListener - Score at iteration 0 is 2.2997219577583463
+12:02:12.458 [main] DEBUG o.d.optimize.solvers.BaseOptimizer - Hit termination condition on iteration 0: score=2.3087104782502115, oldScore=2.308709502135808, condition=org.deeplearning4j.optimize.terminations.EpsTermination@317a33a
+12:02:49.750 [main] INFO  o.d.d.i.MultipleEpochsIterator - Epoch 1, number of batches completed 0
+12:03:30.215 [main] INFO  MyVggConvNet16 - 
+Examples labeled as airplane classified by model as frog: 230 times
+Examples labeled as automobile classified by model as frog: 230 times
+Examples labeled as bird classified by model as frog: 230 times
+Examples labeled as cat classified by model as frog: 230 times
+Examples labeled as deer classified by model as frog: 230 times
+Examples labeled as dog classified by model as frog: 230 times
+Examples labeled as frog classified by model as frog: 230 times
+Examples labeled as horse classified by model as frog: 230 times
+Examples labeled as ship classified by model as frog: 230 times
+Examples labeled as truck classified by model as frog: 230 times
+
+
+==========================Scores========================================
+ Accuracy:        0,1
+ Precision:       0,1
+ Recall:          0,1
+ F1 Score:        0,1
+========================================================================
+12:03:30.215 [main] INFO  MyVggConvNet16 - ****************Example finished********************
+Saved and loaded parameters are equal:      true
+Saved and loaded configurations are equal:  false
+12:03:34.048 [main] INFO  MyVggConvNet16 - 
+
+
+==========================Scores========================================
+ Accuracy:        NaN
+ Precision:       NaN
+ Recall:          NaN
+ F1 Score:        NaN
+========================================================================
